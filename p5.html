@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .combination{
+            background-color: gray;
+            color: white;
+            padding: 20px;
+        }
+
+        .combination~h5{
+            color: blueviolet;
+        }
+        .combination~p{
+            color: darkorange;
+        }
+        .combination~div{
+            background-color: aqua;
+        }
+        .combination+h5+p{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>There are 4 different combinations in css</h1>
+
+    </center>
+    <hr>
+    <ol>
+        <li>Descendent Selector (using space)</li>
+        <li>Child Selector (using > symbol)</li>
+        <li>Adjacent sibling selector (using + symbol)</li>
+        <li>General sibling selector (using ~ symbol)</li>
+    </ol>
+    <hr>
+
+    <h1>General Sibling selector (using ~ symbol) example..</h1>
+    <hr>
+    <section class="combination" id="akhil">
+        <h3>First H3 Tag..! (child elemnt)</h3>
+        <p>First paragraph..! (child element)</p>
+
+        <h3>Seconf H3 Tag..! (child elemnt)</h3>
+        <p>Second paragraph..! (child element)</p>
+
+        <h3>Third H3 Tag..! (child elemnt)</h3>
+        <p>Third paragraph..! (child element)</p>
+
+        <div >
+        <h3>Fourth H3 Tag..! (Grandchild elemnt)</h3>
+        <p>Ffourth paragraph..! (Grandchild element)</p>
+        </div>
+
+        <h3>Five H3 Tag..! (child elemnt)</h3>
+        <p>Five paragraph..! (child element)</p></h3>
+    </section>
+
+    <h5>This is first h5</h5>
+    <p>This is first paragraph</p>
+
+    <h5>This is second h5</h5>
+    <p>This is second paragraph</p>
+    <div>
+        <h5>This is third h5</h5>
+    <p>This is third paragraph</p>
+    </div>
+    <h5>This is fourth h5</h5>
+    <p>This is fourth paragraph</p>
+</body>
+</html>
